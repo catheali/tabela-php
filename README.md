@@ -8,3 +8,7 @@
         - abra o vscode, no arquivo dados.php, DIGITE as informações do banco criado, após isso no terminal digite:
     `php -S localhost:8000 dados.php`
 - Entre no link https://localhost:8000 . O projeto deve funcionar se os passos forem seguidos corretamente.
+
+
+- Se o erro sqli aparecer: 
+        -entre na pasta onde o php foi instalado e procure pelo arquivo php.ini.developer, renomeei o arquivo para php.ini, abra no vscode e tire o ';' da linha  928 onde tem : `extension=mysqli`
