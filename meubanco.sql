@@ -1,15 +1,13 @@
 CREATE database `php-tabela`;
 
-CREATE TABLE  `alunos` (
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `nome` VARCHAR( 150 ) NOT NULL ,
-    `cidade` VARCHAR( 150 ) NOT NULL,
-    `matricula` VARCHAR( 150 ) NOT NULL,
- );
+CREATE TABLE `php-tabela`.`alunos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(140) NOT NULL,
+  `cidade` VARCHAR(145) NOT NULL,
+  `matricula` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
 
- INSERT INTO `php-tabela`.`alunos` (`nome`, `cidade`, `matricula`)
-    VALUES ('Aluno 1', 'cidade 1', '1'),
-    VALUES ('Aluno 2', 'cidade 2', '12'),
-    VALUES ('Aluno 3', 'cidade 3', '123'),
-    VALUES ('Aluno 4', 'cidade 4', '1231');
-    
+INSERT INTO `php-tabela`.`alunos` (`nome`, `cidade`, `matricula`) VALUES ('aluno 1', 'cidade 1', '1');
+INSERT INTO `php-tabela`.`alunos` (`nome`, `cidade`, `matricula`) VALUES ('aluno 2', 'cidade 2', '2');
+INSERT INTO `php-tabela`.`alunos` (`nome`, `cidade`, `matricula`) VALUES ('aluno 3', 'cidade 3', '3');
+INSERT INTO `php-tabela`.`alunos` (`nome`, `cidade`, `matricula`) VALUES ('aluno 4', 'cidade 4', '4');

@@ -3,7 +3,7 @@
 
 $servername = "localhost:3306";
 $username = "root";
-$password = "  -senha- ";
+$password = "1234";
 $dbname = "php-tabela";
 
 $con = new mysqli($servername, $username, $password, $dbname);
