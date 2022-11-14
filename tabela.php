@@ -7,19 +7,21 @@
 </style>
 <div class="container">
     <h1> Alunos</h1>
-    <hr>
+   <div> <a href="http://localhost:8000/process.php"> Cadastrar Novo Aluno </a> </div>
+   <hr>
     <table class="table table-striped table-hover">
         <thead class="table-dark">
             <tr>
             <th>Nome</th>
             <th>Cidade</th>
             <th>Matricula</th>
+            <th>ID</th>
             </tr>
         </thead>
         <tbody>
 
         <?php 
-    
+    include('dados.php');
     if($total > 0) {
 		// inicia o loop que vai mostrar todos os dados
 		do {
@@ -28,6 +30,7 @@
                     <td><?=$alunos['nome']?></td>
                     <td> <?=$alunos['cidade']?></td>
                     <td> <?=$alunos['matricula']?></td>
+                    <td><?=$alunos['id']?></td>
                 </tr>
 <?php
 		// finaliza o loop que vai mostrar os dados

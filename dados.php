@@ -3,7 +3,7 @@
 
 $servername = "localhost:3306";
 $username = "root";
-$password = "suasenha";
+$password = "1234";
 $dbname = "php-tabela";
 
 $con = new mysqli($servername, $username, $password, $dbname);
@@ -22,4 +22,3 @@ $alunos = mysqli_fetch_assoc($result);
 
 $total = mysqli_num_rows($result);
 
-include('tabela.php');
